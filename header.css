@@ -1,0 +1,59 @@
+﻿.header {
+    border: black;
+    height: 100px;
+    background-color: #073763;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1920px;
+    line-height: 100px;
+}
+
+.home {
+    text-align:center;
+}
+
+.btn_home {
+    background-color:#0099FF;
+}
+
+.img-coins {
+    font-size: 40px;
+}
+
+.finance-now {
+    color: white;
+    font-size: 20px;
+}
+
+.add-note {
+    text-align: center;
+}
+
+.btn-add-note {
+    font-size: 20px;
+    background-color: #009E0F;
+    border-radius: 2em;
+    width: 300px;
+}
+
+.profile {
+    text-align:right;
+}
+
+.btn-profile {
+    background-color: #073763!important;
+    border-color: #073763!important;
+}
+
+.img-bell {
+    font-size: 45px;
+}
+
+.img-user {
+    font-size: 40px;
+}
+
+.user-name {
+    font-size: 15px;
+}
