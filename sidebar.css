@@ -4,7 +4,6 @@
 }
 .sidebarContainer ul > li {
     display: block;
-    /*width : 77px;*/
     height: 87px;
     text-align: center;
 }
@@ -14,7 +13,7 @@
     max-width: 1920px;
 }
 .sidebarContainer {
-    height: 100vh;
+    height: calc(100vh - 100px);
     background-color: #073763;
     padding: 0;
     color: white;
