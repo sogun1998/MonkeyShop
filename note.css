@@ -5,8 +5,8 @@
 .money-box {
     text-align: center;
     margin: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 10px;
     font-size: 30px;
     font-weight: bold;
@@ -16,19 +16,57 @@
 }
 
 .main {
-    padding: 50px;
     background-color: white;
-    border: solid;
 }
 
-.container-main {
-    /*height: 80%;*/
+.day {
+    font-size: 25px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.row-1 {
+    background-color: #9FC5F8;
+    border: solid;
+    border-color: black;
+}
+
+.row-2 {
+    background-color: #DDDDDD;
+    border: solid;
+    border-color: black;
+    border-top: 0;
+}
+
+.icon {
+    color: #073763;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.month-year {
+    color: #073763;
+    font-weight: bold;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
 }
 
 .green {
     color: green;
+    font-weight: bold;
 }
 
 .red {
     color: red;
+    font-weight: bold;
 }
