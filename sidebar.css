@@ -1,0 +1,25 @@
+﻿body ul{
+    margin: 0;
+    padding: 0;
+}
+.sidebarContainer ul > li {
+    display: block;
+    /*width : 77px;*/
+    height: 87px;
+    text-align: center;
+}
+.container {
+    margin: 0px;
+    margin-right: 0;
+    max-width: 1920px;
+}
+.sidebarContainer {
+    height: 100vh;
+    background-color: #073763;
+    padding: 0;
+    color: white;
+    padding-top: 15px;
+}
+.sidebarContainer ul > li > i{
+    font-size :38px;
+}

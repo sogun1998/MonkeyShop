@@ -1,0 +1,39 @@
+﻿.contentContainer {
+    border: black 1px solid;
+}
+.height100{
+    height :100%;
+}
+.left-nav {
+   
+    border: black 1px solid;
+    /* padding-top: 14px; */
+    margin-top: 25px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.month {
+    display: inline;
+    padding: 0 15px;
+    position: absolute;
+    top: -22px;
+    z-index: 9999;
+    background-color: white;
+    font-size: 25px;
+}
+.total {
+    margin-top: 30px;
+    /* margin-left: 167px; */
+    /* margin-right: 175px; */
+    border: 1px solid black;
+    text-align: center;
+    /* padding: 3px 100px; */
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.detail-container {
+    border: 1px solid black;
+    height: 80%;
+    margin-top: 20px;
+}
