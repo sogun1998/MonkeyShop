@@ -1,0 +1,89 @@
+.modal-dialog {
+    max-width: 1000px;
+}
+
+.modal-content {
+    width: 90%;
+    border: solid 2px;
+    border-color: black;
+}
+
+.note-header {
+    border-bottom: solid 3px;
+    border-color: black;
+    background-color: #009E0F;
+}
+
+.row-header {
+    width: 100%;
+}
+
+.modal-footer {
+    border: none;
+}
+
+.btn-save {
+    background-color: #2B78E4;
+    border: solid 1px;
+    border-color: black;
+    box-shadow: 3px 3px black;
+}
+
+.btn-cancel {
+    background-color: #CF2A27;
+    border: solid 1px;
+    border-color: black;
+    box-shadow: 3px 3px black;
+    margin-left: 30px;
+}
+
+.input-border {
+    padding: 10px;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-form {
+    border: none;
+}
+
+.input-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+.btn-extend {
+    background-color: #2B78E4;
+    color: white;
+    margin: 20px;
+}
+
+.label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#titleLeft {
+    color: white;
+    font-size: 25px;
+}
+
+#titleNote {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#btnClose {
+    text-align: right;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
