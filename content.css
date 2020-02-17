@@ -115,7 +115,7 @@
 .collect {
     position: relative;
     
-    margin: 27px;
+    margin: 15px;
     font-size: 20px;
 }
 .money {
@@ -136,4 +136,88 @@
     margin: auto;
     height: 250px;
     width: 350px;
+}
+.right-nav {
+    margin-top: 25px;
+}
+.title-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.italic {
+    font-style: italic;
+}
+.border-nav {
+    border: 1px solid;
+}
+.content-header{
+    margin-bottom: 5px;
+}
+.top-bottom-40 {
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+.top-20 {
+    top: -20px; 
+}
+.right-width-header {
+    right: 59px;
+    width: 110px;
+}
+.position-rela{
+    position: relative;
+}
+.wrapper {
+    width: 495px;
+    margin-top: 30px;
+}
+.line{
+    height : 25px;
+    min-width: 100px;
+    margin: 0 auto 10px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+    .line:before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 25px;
+        top: 0;
+        z-index: -2;
+        background: #009E0F;
+    }
+    .line:after {
+        content: '';
+        background: #CC0000;
+        height: 25px;
+        transition: 5s;
+        display: block;
+        width: 100%;
+        animation: animate 1 10s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+.line1:after{
+    max-width: 30%;
+}
+.scroll {
+    margin-top: 20px;
+    /* background-color: lightblue; */
+    width: 510px;
+    height: 146px;
+    overflow: auto;
+    border: 1px solid;
+    margin: 30px auto;
+}
+.margin-bottom-25{
+    margin-bottom: 25px;
 }
