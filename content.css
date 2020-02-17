@@ -1,4 +1,4 @@
-﻿.contentContainer {
+﻿﻿.contentContainer {
     border: black 1px solid;
 }
 
@@ -8,7 +8,6 @@
 
 .left-nav {
     border: black 1px solid;
-    /* padding-top: 14px; */
     margin-top: 25px;
     margin-bottom: 10px;
     position: relative;
@@ -55,7 +54,6 @@
     margin-top: 16px;
     text-align: center;
     width: 86%;
-    /* margin-top: auto; */
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
@@ -67,7 +65,6 @@
 
     .detail-item-container > li {
         display: block;
-        /* height: 57%; */
         width: 81%;
         margin: 10px auto;
         font-size: 18px;
@@ -81,7 +78,6 @@
 
 .detail-item-number {
     display: inline;
-    /* float: right; */
     margin-left: 50%;
 }
 
@@ -99,12 +95,10 @@
 
 .title-detail {
     position: absolute;
-    /* display: inline-table; */
     top: 167px;
     font-size: 22px;
     background-color: white;
     left: 30px;
-    /* margin: 0 15px; */
     padding: 0 15px;
     font-weight: bold;
 }
@@ -133,7 +127,7 @@
 
 .collect {
     position: relative;
-    margin: 27px;
+    margin: 15px;
     font-size: 20px;
 }
 
@@ -159,4 +153,103 @@
     margin: auto;
     height: 250px;
     width: 350px;
+}
+
+.right-nav {
+    margin-top: 25px;
+}
+
+.title-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.border-nav {
+    border: 1px solid;
+}
+
+.content-header {
+    margin-bottom: 5px;
+}
+
+.top-bottom-40 {
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.top-20 {
+    top: -20px;
+}
+
+.right-width-header {
+    right: 59px;
+    width: 110px;
+}
+
+.position-rela {
+    position: relative;
+}
+
+.wrapper {
+    width: 495px;
+    margin-top: 30px;
+}
+
+.line {
+    height: 25px;
+    min-width: 100px;
+    margin: 0 auto 10px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+
+    .line:before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 25px;
+        top: 0;
+        z-index: -2;
+        background: #009E0F;
+    }
+
+    .line:after {
+        content: '';
+        background: #CC0000;
+        height: 25px;
+        transition: 5s;
+        display: block;
+        width: 100%;
+        animation: animate 1 10s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+.line1:after {
+    max-width: 30%;
+}
+
+.scroll {
+    margin-top: 20px;
+    width: 510px;
+    height: 146px;
+    overflow: auto;
+    border: 1px solid;
+    margin: 30px auto;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px;
 }

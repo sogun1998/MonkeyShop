@@ -1,0 +1,52 @@
+﻿body
+{
+    margin: 0;
+    padding: 0;
+    
+}
+.contentContainer{
+    padding: 0;
+    font-size: 25px;
+    
+}
+.title{
+    text-align: center;
+    margin-top: 40px;
+}
+.button-container {
+    text-align: center;
+    margin-top: 20%;
+}
+.button {
+    width: 276px;
+    height: 56px;
+    border-radius: 35px;
+    background-color: #E69138;
+    border-color: black;
+}
+.content-button{
+    margin-left: 25px;
+}
+.gray-background{
+    background-color: #ccc;
+}
+.white-background {
+    background-color: #fff;
+}
+.margin-top-60{
+    margin-top: 60px;
+}
+.margin-left-30{
+    margin-left: 30%;
+}
+.margin-top-30{
+    margin-top: 30px;
+}
+.margin-top-bottom-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.input-form {
+    width: 60%;
+    border: 2px solid #717171
+}
