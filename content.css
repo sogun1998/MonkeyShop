@@ -1,17 +1,19 @@
 ﻿.contentContainer {
     border: black 1px solid;
 }
-.height100{
-    height :100%;
+
+.height100 {
+    height: 100%;
 }
+
 .left-nav {
-   
     border: black 1px solid;
     /* padding-top: 14px; */
     margin-top: 25px;
     margin-bottom: 10px;
     position: relative;
 }
+
 .month {
     display: inline;
     padding: 0 15px;
@@ -21,19 +23,140 @@
     background-color: white;
     font-size: 25px;
 }
+
 .total {
-    margin-top: 30px;
-    /* margin-left: 167px; */
-    /* margin-right: 175px; */
+    margin-top: 40px;
     border: 1px solid black;
     text-align: center;
-    /* padding: 3px 100px; */
     width: 50%;
     margin-right: auto;
     margin-left: auto;
+    font-size: 30px;
 }
+
 .detail-container {
     border: 1px solid black;
-    height: 80%;
-    margin-top: 20px;
+    height: 75%;
+    margin-top: 50px;
+    position: relative;
+}
+
+.border-green {
+    border: 3px solid #009E0F;
+    color: #009E0F;
+}
+
+.border-red {
+    border: 3px solid #CC0000;
+    color: #CC0000;
+}
+
+.detail-today {
+    margin-top: 16px;
+    text-align: center;
+    width: 86%;
+    /* margin-top: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.detail-item-container {
+    margin-top: 27px;
+}
+
+    .detail-item-container > li {
+        display: block;
+        /* height: 57%; */
+        width: 81%;
+        margin: 10px auto;
+        font-size: 18px;
+        font-size: 18px;
+        margin-top: 17px;
+    }
+
+.detail-item-text {
+    padding-left: 10px;
+}
+
+.detail-item-number {
+    display: inline;
+    /* float: right; */
+    margin-left: 50%;
+}
+
+.more {
+    text-align: center;
+    color: #2B78E4;
+}
+
+.detail-today-container {
+    width: 70%;
+    margin: 45px auto 0 auto;
+    height: 90%;
+    border: 1px solid;
+}
+
+.title-detail {
+    position: absolute;
+    /* display: inline-table; */
+    top: 167px;
+    font-size: 22px;
+    background-color: white;
+    left: 30px;
+    /* margin: 0 15px; */
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+.select-day {
+    width: 200px;
+    position: absolute;
+    top: 166px;
+    right: 126px
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 250px;
+    width: 250px;
+}
+
+.chart-nav {
+    margin-top: 32px;
+}
+
+.my-border-bottom {
+    border-bottom: 3px solid;
+}
+
+.collect {
+    position: relative;
+    margin: 27px;
+    font-size: 20px;
+}
+
+.money {
+    position: absolute;
+    right: 0;
+}
+
+.red-text {
+    color: #CC0000;
+}
+
+.green-text {
+    color: #009E0F;
+}
+
+.padding-bottom-25 {
+    padding-bottom: 25px;
+}
+
+.chart-container-max {
+    position: relative;
+    margin: auto;
+    height: 250px;
+    width: 350px;
 }

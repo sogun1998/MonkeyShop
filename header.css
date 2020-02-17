@@ -10,11 +10,11 @@
 }
 
 .home {
-    text-align:center;
+    text-align: center;
 }
 
 .btn_home {
-    background-color:#0099FF;
+    background-color: #0099FF;
 }
 
 .img-coins {
@@ -38,12 +38,12 @@
 }
 
 .profile {
-    text-align:right;
+    text-align: right;
 }
 
 .btn-profile {
-    background-color: #073763!important;
-    border-color: #073763!important;
+    background-color: #073763 !important;
+    border-color: #073763 !important;
 }
 
 .img-bell {

@@ -8,7 +8,7 @@
     border-color: black;
 }
 
-.add-note-header {
+.note-header {
     border-bottom: solid 3px;
     border-color: black;
     background-color: #009E0F;
@@ -59,7 +59,7 @@
 .btn-extend {
     background-color: #2B78E4;
     color: white;
-    margin: 30px;
+    margin: 20px;
 }
 
 .label {
@@ -74,7 +74,7 @@
     font-size: 25px;
 }
 
-#titleAddNote {
+#titleNote {
     text-align: center;
     color: white;
     font-size: 30px;

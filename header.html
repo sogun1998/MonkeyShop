@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ee0fedb69f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="sidebar.css">
-    <link rel="stylesheet" href="content.css">
     <link rel="stylesheet" href="add-note.css">
+    <script src="add-note.js"></script>
+
     <title>Hello, world!</title>
 </head>
 
@@ -28,7 +28,7 @@
                     <i class="fas fa-credit-card"></i> Tài chính hiện tại: 100000 VND
                 </div>
                 <div class="col-sm-6 add-note">
-                    <button type="button" class="btn btn-success btn-add-note" data-toggle="modal" data-target="#addNote">Thêm ghi chép</button>
+                    <button type="button" class="btn btn-success btn-add-note" data-toggle="modal" data-target="#addNote" onclick="addNote()">Thêm ghi chép</button>
                 </div>
                 <div class="col-sm-2 profile">
                     <a href="#" class="btn btn-primary btn-lg active btn-profile" role="button" aria-pressed="true">
@@ -43,83 +43,6 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-1 sidebarContainer">
-                <ul>
-                    <li>
-                        <i class="fas fa-home"></i>
-                        <div>Tổng quan</div>
-                    </li>
-                    <li>
-                        <i class="fas fa-book"></i>
-                        <div>Sổ ghi chép</div>
-                    </li>
-                    <li>
-                        <i class="fas fa-list-alt"></i>
-                        <div>Tài khoản</div>
-                    </li>
-                    <li>
-                        <i class="fas fa-building"></i>
-                        <div>Hạn mức chi</div>
-                    </li>
-                    <li>
-                        <i class="fab fa-wpforms"></i>
-                        <div>Báo cáo</div>
-                    </li>
-                    <li>
-                        <i class="fas fa-bars"></i>
-                        <div>Khác</div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-sm-11 contentContainer">
-                <div class="container height100">
-                    <div class="row height100">
-                        <div class="col-sm-8 left-nav">
-                            <div class="month">Thu chi thang 2/2020</div>
-                            <div class="total">Tai chinh hien tai <br />+10000000</div>
-                            <div class="detail-container">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <div class="detail-today">
-                                                Tai chinh hom nay: </br> 3.000.000 VND
-                                            </div>
-                                            <ul>
-                                                <li>
-                                                    <div>An sang</div>
-                                                    <div> - 500.000D</div>
-                                                </li>
-                                                <li>
-                                                    <div>An sang</div>
-                                                    <div> - 500.000D</div>
-                                                </li>
-                                                <li>
-                                                    <div>An sang</div>
-                                                    <div> - 500.000D</div>
-                                                </li>
-                                                <li>
-                                                    <div>An sang</div>
-                                                    <div> - 500.000D</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-9">col-sm-4</div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">col-sm-4</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add Note -->
     <div class="modal fade" id="addNote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -149,7 +72,7 @@
                                             <div class="input-border">
                                                 <div class="input-title">Số tiền</div>
                                                 <div>
-                                                    <input type="number" class="form-control input-form" value="100000" aria-label="money" aria-describedby="basic-addon1" style="width:80%" />
+                                                    <input type="number" class="form-control input-form" value="100000" aria-describedby="basic-addon1" style="width:80%" />
                                                     <label style="position:absolute; top:68px; right:30px">VND</label>
                                                 </div>
                                             </div>
@@ -166,7 +89,7 @@
                                         <div class="col-sm-6">
                                             <div class="input-border">
                                                 <div class="input-title">Ngày tháng</div>
-                                                <div><input type="date" class="form-control input-form" placeholder="Số tiền" aria-label="money" aria-describedby="basic-addon1"></div>
+                                                <div><input type="date" class="form-control input-form" aria-describedby="basic-addon1"></div>
                                             </div>
                                             <div class="input-border">
                                                 <div class="input-title">Danh mục</div>
@@ -186,45 +109,70 @@
                             </div>
                         </div>
 
-                        <button type="button" class="btn btn-extend">Thông tin thêm</button>
+                        <button type="button" class="btn btn-extend" onclick="noteExtend()">Thông tin thêm</button>
 
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="input-border">
-                                        <div class="input-title">Chi cho ai</div>
-                                        <div>
-                                            <input type="text" class="form-control input-form" aria-label="who" aria-describedby="basic-addon1" />
+                        <div id="note-extend">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="input-border">
+                                            <div class="input-title">Chi cho ai</div>
+                                            <div>
+                                                <input type="text" class="form-control input-form" aria-describedby="basic-addon1" />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="input-border">
-                                        <div class="input-title">Địa điểm</div>
-                                        <div>
-                                            <input type="text" class="form-control input-form" aria-label="location" aria-describedby="basic-addon1" />
+                                    <div class="col-sm-4">
+                                        <div class="input-border">
+                                            <div class="input-title">Địa điểm</div>
+                                            <div>
+                                                <input type="text" class="form-control input-form" aria-describedby="basic-addon1" />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="input-border">
-                                        <div class="input-title">Sự kiện</div>
-                                        <div>
-                                            <input type="text" class="form-control input-form" aria-label="event" aria-describedby="basic-addon1" />
+                                    <div class="col-sm-4">
+                                        <div class="input-border">
+                                            <div class="input-title">Sự kiện</div>
+                                            <div>
+                                                <input type="text" class="form-control input-form" aria-describedby="basic-addon1" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="label">
-                            <label for="img">Hình ảnh</label>
-                            <input type="file" id="img" name="img" accept="image/*">
-                        </div>
+                            <div class="label">
+                                <label for="img">Hình ảnh</label>
+                                <input type="file" id="img" name="img" accept="image/*">
+                            </div>
 
-                        <div class="custom-control custom-switch label">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch">
-                            <label class="custom-control-label" for="customSwitch">Đi vay</label>
+                            <div class="custom-control custom-switch label">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch" onclick="borrow()">
+                                <label class="custom-control-label" for="customSwitch">Đi vay</label>
+                            </div>
+
+                            <div id="borrow">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="input-border">
+                                                <div class="input-title">Người cho vay</div>
+                                                <div>
+                                                    <input type="text" class="form-control input-form" aria-describedby="basic-addon1" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="input-border">
+                                                <div class="input-title">Hạn trả</div>
+                                                <div>
+                                                    <input type="date" class="form-control input-form" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -240,11 +188,12 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
