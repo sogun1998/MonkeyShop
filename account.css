@@ -1,0 +1,68 @@
+.col-tab {
+    padding: 0px;
+}
+
+.btn-tab {
+    height: 100px;
+    width: inherit;
+    border: solid 3px;
+    border-color: #073763;
+    margin: 30px 0px 50px 0px;
+    font-weight: bold;
+}
+
+.tab-current {
+    font-size: 30px;
+    color: white;
+    background-color: #009E0F;
+}
+
+.tab-not-current {
+    font-size: 30px;
+    color: black;
+    background-color: white;
+}
+
+.tab {
+    border: solid 2px;
+    padding: 30px;
+    border-color: #073763;
+}
+
+.total-money {
+    margin: 10px auto 30px auto;
+    padding: 30px;
+    height: fit-content;
+    width: fit-content;
+    background-color: #93C47D;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    border: solid 2px;
+    border-color: #073763;
+}
+
+.btn-edit {
+    background-color: #9FC5F8;
+    border: none;
+}
+
+.btn-add-account {
+    padding: 20px 50px;
+    margin: 30px auto 20px auto;
+    font-size: 20px;
+    background-color: #009E0F;
+    border-radius: 2em;
+}
+
+.account-tab-row {
+    margin: 5px 0px;
+    background-color: #9FC5F8;
+    font-size: 30px;
+    border: solid 2px;
+    border-color: #073763;
+}
+
+.align-self {
+    align-self: center;
+}
