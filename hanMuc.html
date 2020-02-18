@@ -83,13 +83,13 @@
                 </div>
 
                 <div class="col-sm-11 contentContainer gray-background">
-                    <h3 class="title" style="display: none">Cùng sổ thu chi MISA lập ra các hạn mức chi để quản lý chi tiêu tốt hơn nhé</h3>
-                    <div class="button-container" style="display: none">
+                    <h3 class="title">Cùng sổ thu chi MISA lập ra các hạn mức chi để quản lý chi tiêu tốt hơn nhé</h3>
+                    <div class="button-container">
                         <button type="button" class="btn btn-warning button"><i class="fas fa-plus"></i><span class="content-button">Thêm hạn mức chi</span></button>
                         <!--<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>-->
                         
                     </div>
-                    <div class="container">
+                    <div class="container maintain" style="display: none">
                         <div class="row">
                             <div class="col-sm-2"></div>
                             <div class="col-sm-8">
@@ -179,7 +179,9 @@
                                                     <div class=" margin-left-30 ">Ngày bắt đầu</div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">col-sm-4</div>
+                                            <div class="col-sm-6">
+                                                <input id="datepicker1" width="327" class="calendar-picker" />
+                                            </div>
                                         </div>
 
                                     </div>
@@ -190,12 +192,39 @@
                                                     <div class=" margin-left-30 ">Ngày kết thúc</div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">col-sm-4</div>
+                                            <div class="col-sm-6">
+                                                <input id="datepicker2" width="327" class="calendar-picker" />
+                                            </div>
                                         </div>
 
                                     </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Dồn sang kì sau</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                                </div>
+                                                <div class="comment-text">Số tiền dư hoặc bội chi sẽ được dồn sang kì sau</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
                                     
-
+                                    <div class="container padding-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-8"></div>
+                                            <div class="col-sm-4">
+                                                <a href="#" class="btn btn-primary btn-lg active add" role="button" aria-pressed="true">Thêm hạn mức</a>
+                                                <a href="#" class="btn btn-primary btn-lg active cancel" role="button" aria-pressed="true">Cancel</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-2"></div>
