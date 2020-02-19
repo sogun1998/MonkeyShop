@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ee0fedb69f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
@@ -21,6 +22,7 @@
     <link rel="stylesheet" href="hanMuc.css">
     <link rel="stylesheet" href="han-muc2.css">
     <link rel="stylesheet" href="note.css">
+    <script src="han-muc2.js"></script>
 
 
     <title>Hạn mức</title>
@@ -110,9 +112,9 @@
                                                 <div class="title-detail top-20 ">
                                                     Hạn mức chi tháng 2
                                                 </div>
-                                                
-                                                    <span class=" status title-detail green2-background ">Đang diễn ra</span>
-                                                
+
+                                                <span class=" status title-detail green2-background ">Đang diễn ra</span>
+
                                             </div>
                                         </div>
                                     </div>
@@ -133,9 +135,9 @@
                                                 <div class="title-detail top-20">
                                                     Hạn mức chi tháng 1
                                                 </div>
-                                                
-                                                    <span class=" status title-detail red-background ">Đã kết thúc</span>
-                                                
+
+                                                <span class=" status title-detail red-background ">Đã kết thúc</span>
+
                                             </div>
                                         </div>
                                     </div>
@@ -146,6 +148,12 @@
                                     <h3 class="padding-25">
                                         Hạn mức tháng 2
                                     </h3>
+                                    <button type="button" class="btn btn-edit edit-btn" data-toggle="modal" data-target="#editNote" onclick="">
+                                        <i class="fas fa-tools"></i> Sửa
+                                    </button>
+                                    <button type="button" class="btn btn-delete delete-btn">
+                                        <i class="far fa-trash-alt"></i> Xóa
+                                    </button>
                                     <div class="wrapper margin-top-45">
                                         <div class="line line1">30%</div>
                                     </div>
@@ -213,7 +221,7 @@
                                             <div class="col-sm-1 icon"><i class="fas fa-shopping-cart" style="color:#E06666"></i></div>
                                             <div class="col-sm-5 left">
                                                 <div style="font-weight:bold">Đi chợ/ Siêu thị</div>
-                                                <div >Thức ăn trong ngày</div>
+                                                <div>Thức ăn trong ngày</div>
                                             </div>
                                             <div class="col-sm-5 right">
                                                 <div class="red">- 100.000 VND</div>
@@ -227,7 +235,7 @@
                                             <div class="col-sm-1 icon"><i class="fas fa-money-check-alt" style="color:#6AA84F"></i></div>
                                             <div class="col-sm-5 left">
                                                 <div style="font-weight:bold">Lương</div>
-                                                <div >Lương hàng tháng</div>
+                                                <div>Lương hàng tháng</div>
                                             </div>
                                             <div class="col-sm-5 right">
                                                 <div class="green">+ 100.000 VND</div>
@@ -241,11 +249,185 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="editNote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header container note-header">
+                    <div class="row row-header">
+                        <div class="col-sm-4" id="titleLeft">
+                            <i class="fas fa-circle-notch"></i> Sửa hạn mức
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="modal-title" id="titleNote">Thu chi tháng 2</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <button type="button" id="btnClose" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container maintain" ">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-10">
+                                <div class="white-background ">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-6 margin-top-30">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Số tiền</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 margin-top-30 ">
+                                                <input type="email" class="form-control input-form wid-100" id="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Tên hạn mức</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6"><input type="email" class="form-control input-form wid-100" id=""></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Hạng mục chi</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <select class="custom-select input-form wid-100">
+                                                    <option selected>Tất cả hạng mục</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Tài khoản</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <select class="custom-select input-form wid-100">
+                                                    <option selected>Tất cả hạng mục</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Lặp lại</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <select class="custom-select input-form wid-100">
+                                                    <option selected>Tất cả hạng mục</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Ngày bắt đầu</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input id="datepicker1" width="327" class="calendar-picker" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Ngày kết thúc</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input id="datepicker2" width="327" class="calendar-picker" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Dồn sang kì sau</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                                </div>
+                                                <div class="comment-text">Số tiền dư hoặc bội chi sẽ được dồn sang kì sau</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-save" data-dismiss="modal">
+                            <i class="far fa-save"></i> Lưu
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-cancel" data-dismiss="modal">
+                            <i class="far fa-trash-alt"></i> Hủy
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
