@@ -40,3 +40,16 @@ for (var i = 0; i < dropdown.length; i++) {
         }
     });
 }
+var viewadd = document.getElementById("viewadd");
+var viewhidden = document.getElementById("viewadd");
+var viewhiddenContent = document.getElementById("#viewhidden-content");
+viewadd.addEventListener("click", function () {
+    viewhidden.style.display = "block"
+    viewadd.style.display = "none"
+    viewhiddenContent.style.display = "block"
+});
+viewhidden.addEventListener("click", function () {
+    viewhidden.style.display = "block"
+    viewadd.style.display = "none"
+    viewhiddenContent.style.display = "block"
+});
