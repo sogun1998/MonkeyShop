@@ -1,0 +1,352 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ee0fedb69f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="popup-note.css">
+    <link rel="stylesheet" href="other.css">
+    <script src="popup-note.js"></script>
+
+
+    <title>Other</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1 home">
+                    <a href="#" class="btn btn-primary btn-lg active btn-home" role="button" aria-pressed="true">
+                        <i class="fas fa-coins img-coins"></i>
+                    </a>
+                </div>
+                <div class="col-sm-3 finance-now">
+                    <i class="fas fa-credit-card"></i> Tài chính hiện tại: 100000 VND
+                </div>
+                <div class="col-sm-6 add-note">
+                    <button type="button" class="btn btn-success btn-add-note" data-toggle="modal" data-target="#addNote" onclick="popupNote()">Thêm ghi chép</button>
+                </div>
+                <div class="col-sm-2 profile">
+                    <a href="#" class="btn btn-primary btn-lg active btn-profile" role="button" aria-pressed="true">
+                        <i class="fas fa-bell img-bell"></i>
+                    </a>
+                    <a href="#" class="btn btn-primary btn-lg active btn-profile" role="button" aria-pressed="true">
+                        <i class="fas fa-user-circle img-user"></i>
+                        <div class="user-name">Quang</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1 sidebarContainer">
+                    <ul>
+                        <li>
+                            <i class="fas fa-home"></i>
+                            <div>Tổng quan</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-book"></i>
+                            <div>Sổ ghi chép</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-list-alt"></i>
+                            <div>Tài khoản</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-building"></i>
+                            <div>Hạn mức chi</div>
+                        </li>
+                        <li>
+                            <i class="fab fa-wpforms"></i>
+                            <div>Báo cáo</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-bars"></i>
+                            <div>Khác</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-2 side-bar-account">
+                    <div class="label-title">Tài khoản</div>
+                    <button class="btn-tab-account tablink-account tab-not-current" onclick="openTabAccount(event,'thu-chi-dinh-ki')">
+                        <i class="fas fa-clock"></i> Thu chi định kì
+                    </button>
+                    <button class="btn-tab-account tablink-account tab-current" onclick="openTabAccount(event,'hang-muc-thu-chi')">
+                        <i class="fas fa-server"></i> Hạng mục thu chi
+                    </button>
+                    <button class="btn-tab-account tablink-account tab-not-current" onclick="openTabAccount(event,'tro-giup-phan-hoi')">
+                        <i class="fas fa-question-circle"></i> Trợ giúp/Phản hồi
+                    </button>
+                    <button class="btn-tab-account tablink-account tab-not-current" onclick="openTabAccount(event,'gioi-thieu-ban-be')">
+                        <i class="fas fa-share-alt"></i> Giới thiệu bạn bè
+                    </button>
+                    <button class="btn-tab-account tablink-account tab-not-current" onclick="openTabAccount(event,'thiet-lap')">
+                        <i class="fas fa-ellipsis-h"></i> Thiết lập
+                    </button>
+                </div>
+
+                <div class="col-sm-9" style="background-color:#999999">
+                    <div id="thu-chi-dinh-ki" class="tab-account" style="display:none">
+
+                    </div>
+                    <div id="hang-muc-thu-chi" class="tab-account">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-3"></div>
+                                <div class="col-sm-6 center title-hang-muc">
+                                    Hạng mục thu chi
+                                </div>
+                                <div class="col-sm-3 center">
+                                    <button class="btn-add-item">
+                                        <i class="fas fa-plus-circle"></i> Thêm hạng mục
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3"></div>
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <button class="btn-tab-chi-thu tablink-chi-thu tab-current" onclick="openTabChiThu(event, 'chi')">
+                                                Mục chi
+                                            </button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn-tab-chi-thu tablink-chi-thu tab-not-current" onclick="openTabChiThu(event, 'thu')">
+                                                Mục thu
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div style="text-align:-webkit-right">
+                                        <div class="search-view">
+                                            <i class="fas fa-search"></i>
+                                            <input type="text" class="search-input" placeholder="Tìm kiếm hạng mục">
+                                        </div>
+                                    </div>
+                                    <div id="chi" class="tab-chi-thu">
+                                        <ul>
+                                            <li>
+                                                <div class="row dropdown-btn">
+                                                    <div class="col-sm-1 icon"><i class="fas fa-money-bill-wave"></i></div>
+                                                    <div class="col-sm-10">Cho vay</div>
+                                                    <button class="col-sm-1">
+                                                        <i class="fa fa-caret-down"></i>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-1 icon"><i class="fas fa-child"></i></div>
+                                                    <div class="col-sm-10">Con cái</div>
+                                                    <button class="col-sm-1 dropdown-btn">
+                                                        <i class="fa fa-caret-down"></i>
+                                                    </button>
+                                                    <div class="container dropdown-container">
+                                                        <div class="row dropdown-row">
+                                                            <div class="col-sm-2 icon"><i class="fas fa-money-bill-wave"></i></div>
+                                                            <div class="col-sm-10">Học phí</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-1 icon"><i class="fas fa-money-bill-wave"></i></div>
+                                                            <div class="col-sm-11">Sách vở</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-1 icon"><i class="fas fa-money-bill-wave"></i></div>
+                                                            <div class="col-sm-11">Sữa</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="thu" class="tab-chi-thu" style="display:none">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tro-giup-phan-hoi" class="tab-account" style="display:none">
+
+                    </div>
+                    <div id="gioi-thieu-ban-be" class="tab-account" style="display:none">
+
+                    </div>
+                    <div id="thiet-lap" class="tab-account" style="display:none">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Note -->
+    <div class="modal fade" id="addNote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header container note-header">
+                    <div class="row row-header">
+                        <div class="col-sm-4" id="titleLeft">
+                            <i class="fas fa-circle-notch"></i> Thêm ghi chép
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="modal-title" id="titleNote">Chi tiền</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <button type="button" id="btnClose" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="input-border">
+                                                <div class="input-title">Số tiền</div>
+                                                <div>
+                                                    <input type="number" class="form-control input-form" value="100000" aria-describedby="basic-addon1" style="width:80%" />
+                                                    <label style="position:absolute; top:68px; right:30px">VND</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-border">
+                                                <div class="input-title">Loại</div>
+                                                <select class="input-form" id="type" style="width:90%; margin-left:10px; margin-top:5px">
+                                                    <option>Chi tiêu ngày</option>
+                                                    <option>Chi tiêu tuần</option>
+                                                    <option>Chi tiêu tháng</option>
+                                                    <option>Chi tiêu năm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="input-border">
+                                                <div class="input-title">Ngày tháng</div>
+                                                <div><input type="date" class="form-control input-form" aria-describedby="basic-addon1"></div>
+                                            </div>
+                                            <div class="input-border">
+                                                <div class="input-title">Danh mục</div>
+                                                <select class="input-form" id="category" style="width:90%; margin-left:10px; margin-top:5px">
+                                                    <option>Chữa bệnh</option>
+                                                    <option>Mua sắm</option>
+                                                    <option>Thức ăn</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 input-border">
+                                <div class="input-title">Ghi chú</div>
+                                <div><textarea class="form-control input-form" style="height:140px"></textarea></div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-extend" onclick="noteExtend()">Thông tin thêm</button>
+
+                        <div id="note-extend">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="input-border">
+                                            <div class="input-title">Chi cho ai</div>
+                                            <div>
+                                                <input type="text" class="form-control input-form" aria-describedby="basic-addon1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-border">
+                                            <div class="input-title">Địa điểm</div>
+                                            <div>
+                                                <input type="text" class="form-control input-form" aria-describedby="basic-addon1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-border">
+                                            <div class="input-title">Sự kiện</div>
+                                            <div>
+                                                <input type="text" class="form-control input-form" aria-describedby="basic-addon1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="label">
+                                <label for="img">Hình ảnh</label>
+                                <input type="file" id="img" name="img" accept="image/*">
+                            </div>
+
+                            <div class="custom-control custom-switch label">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch" onclick="borrow()">
+                                <label class="custom-control-label" for="customSwitch">Đi vay</label>
+                            </div>
+
+                            <div id="borrow">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="input-border">
+                                                <div class="input-title">Người cho vay</div>
+                                                <div>
+                                                    <input type="text" class="form-control input-form" aria-describedby="basic-addon1" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="input-border">
+                                                <div class="input-title">Hạn trả</div>
+                                                <div>
+                                                    <input type="date" class="form-control input-form" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-save" data-dismiss="modal">
+                            <i class="far fa-save"></i> Lưu
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-cancel" data-dismiss="modal">
+                            <i class="far fa-trash-alt"></i> Hủy
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="other.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
