@@ -67,7 +67,7 @@
 
 .search-view {
     width: fit-content;
-    margin: 10px 0px;
+    margin: 10px 0px 30px 0px;
     font-size: 20px;
     border-radius: 10px;
     background-color: white;
@@ -82,11 +82,14 @@
 .tab-chi-thu ul > li {
     display: block;
     width: inherit;
-    padding: 10px 50px;
     font-size: 25px;
     background-color: white;
     border: solid 1px;
     border-color: black;
+}
+
+.row-thu-chi {
+    margin: 20px 25px;
 }
 
 .icon {
@@ -95,12 +98,22 @@
     text-align: center;
 }
 
+.dropdown-btn {
+    border: none;
+    background-color: white;
+}
+
 .dropdown-container {
     display: none;
+    margin-top: 15px;
 }
 
 .dropdown-row {
+    padding: 10px 0px;
     border: solid 1px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
 }
 
 .center {
