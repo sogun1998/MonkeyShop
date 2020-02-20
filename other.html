@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="popup-note.css">
     <link rel="stylesheet" href="other.css">
-
+    <script src="Home.js"></script>
     <script src="popup-note.js"></script>
     <title>Other</title>
-    
+
 </head>
 
 <body>
@@ -357,20 +357,21 @@
     <div class="modal fade" id="addNote1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content" style="border-top-left-radius:5px;border-top-right-radius:5px;">
-                <div class="modal-header container note-header" style="background-color:#326af1">
+                <div class="modal-header container note-header" style="background-color:#073763">
                     <div class="row row-header">
                         <div class="col-sm-12">
-                            <div style="width:100px;margin-left:auto;margin-right:auto;">
-                                <select id="payMore" style="" class="custom-select">
-                                    <option value="">Chi tiền</option>
-                                    <option value="">Cho Vay</option>
-                                    <option value="">Thu Hồi</option>
+                            <div style="width:120px;margin-left:auto;margin-right:auto;padding:0 5px;border:1px solid #326af1;background-color:#379fed;border-radius:12px;font-size:1.1em;">
+
+                                <select id="payMore" style="background-color:transparent!important;border:none;color:#fff !important" class="custom-select">
+                                    <option style="background-color:#379fed" value="">Chi tiền</option>
+                                    <option style="background-color:#379fed" value="">Cho Vay</option>
+                                    <option style="background-color:#379fed" value="">Thu Hồi</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-body" style="background-color:#827474">
+                <div class="modal-body" style="background-color:#DDDDDD">
                     <div class="row" style="color:#000;">
                         <div class="input-group mb-3">
                             <div class="col-sm-3">
@@ -420,7 +421,7 @@
 
 
                         </div>
-                        <div class="input-group mb-3 " id="viewhidden-content" >
+                        <div class="input-group mb-3 " id="viewhidden-content">
                             <div class="input-group mb-3">
                                 <div class="col-sm-3">
                                     <b style="float:right;font-size:2em"><i class="fas fa-home"></i></b>
@@ -452,8 +453,8 @@
 
                         </div>
                         <div class="col-sm-12" style="text-align:center;">
-                            <button class="" style="border:none;background-color:unset;color:#326af1" id="viewhidden"> Ẩn Chi Tiết <i class="fas fa-angle-up"></i> </button>
-                            <button style="border:none;background-color:unset;color:#326af1;display:none" id="viewadd"> Thêm Chi Tiết <i class="fas fa-angle-down"></i> </button>
+                            <button style="border:none;background-color:unset;color:#326af1" id="viewhidden"> Ẩn Chi Tiết <i class="fas fa-angle-up"></i> </button>
+                            <button  class="hidden" style="border:none;background-color:unset;color:#326af1" id="viewadd"> Thêm Chi Tiết <i class="fas fa-angle-down"></i> </button>
                         </div>
 
                     </div>
@@ -475,5 +476,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            var home = new Home();
+            home.initHome();
+        })
+    </script>
 </body>
 </html>
