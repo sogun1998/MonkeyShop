@@ -1,0 +1,58 @@
+.sidebarContainer {
+    position: relative;
+}
+
+.sidebarchild {
+    display: none;
+    position: absolute;
+    left: 109%;
+    z-index: 999;
+    top: 0;
+    background-color: #fff;
+    color: #000;
+    min-width: 170px;
+}
+
+    .sidebarchild ul {
+        padding: 0 !important;
+    }
+
+        .sidebarchild ul li {
+            padding: 5px;
+            border: 1px solid #000;
+        }
+
+            .sidebarchild ul li :hover {
+                background-color: #2B78E4;
+                color: #fff;
+            }
+/* css Theo doi thu chi */
+.fl-date-item span {
+    min-width: 66px;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 3px;
+    background-color: #2B78E4;
+    color: #fff;
+}
+
+.fl-date-content {
+    border: 1px solid;
+}
+
+.fl-date-content, .fl-date-item {
+    margin: 0 !important;
+}
+
+.fl-date-content-item {
+    padding: 5px;
+}
+
+    .fl-date-content-item .number {
+        float: right;
+    }
+
+.fl-date-content-title {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}

@@ -1,4 +1,7 @@
-﻿﻿.contentContainer {
+﻿.hidden{
+    display:none;
+}
+﻿.contentContainer {
     border: black 1px solid;
 }
 
