@@ -1,4 +1,7 @@
-﻿.header {
+﻿.hidden{
+    display:none;
+}
+.header {
     border: black;
     height: 100px;
     background-color: #073763;
