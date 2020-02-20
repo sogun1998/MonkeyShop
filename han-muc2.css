@@ -1,0 +1,187 @@
+﻿body
+{
+    margin : 0;
+    padding: 0;
+}
+.button1-container{
+    width: 100%;
+    text-align: center;
+}
+.add-han-muc {
+    background-color: #38761D !important;
+    border: 1px solid #38761D !important;
+    border-radius: 40px;
+    padding: 10px 20px 10px 20px;
+    margin-right: 15px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.add-han-muc> i{
+    margin-right: 20px;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.line {
+    height: 25px;
+    min-width: 100px;
+    margin: 0 auto 10px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+
+    .line:before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 25px;
+        top: 0;
+        z-index: 1;
+        background: #009E0F;
+    }
+
+    .line:after {
+        content: '';
+        background: #CC0000;
+        height: 25px;
+        transition: 5s;
+        display: block;
+        width: 100%;
+        animation: animate 1 10s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+.line1:after {
+    max-width: 30%;
+}
+.line2:after {
+    max-width: 100%;
+}
+.han-muc-container {
+    margin: 0 auto;
+    width: 90%;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.margin-top-45{
+    margin-top: 45px;
+}
+.status {
+    border: 2px solid black;
+    top: 14px;
+    /* right: 0; */
+    left: 346px;
+    
+    color: #fff;
+    padding: 10px;
+}
+.green2-background {
+    background-color: #009e0f;
+}
+.green1-background {
+    background-color: #B6D7A8;
+}
+.red-background {
+    background-color: #CC0000;
+}
+.padding-bot-10{
+    padding-bottom: 10px;
+}
+.padding-25{
+    padding: 25px;
+}
+.font-size-15 {
+    font-size: 15px!important;
+}
+.icon {
+    color: #073763;
+    text-align: center;
+    font-size: 36px !important;
+    font-weight: bold;
+}
+.font-size-20 {
+    font-size: 20px !important;
+}
+.padding-bot-30{
+    padding-bottom: 30px;
+}
+.edit-btn {
+    top: 75px;
+    right: 160px;
+    position: absolute;
+}
+.delete-btn {
+    position: absolute;
+    top: 75px;
+    right: 55px;
+}
+.modal-dialog {
+    max-width: 1000px;
+}
+
+.modal-content {
+    width: 90%;
+    border: solid 2px;
+    border-color: black;
+}
+
+.note-header {
+    border-bottom: solid 3px;
+    border-color: black;
+    background-color: #009E0F;
+}
+
+.row-header {
+    width: 100%;
+}
+
+.modal-footer {
+    border: none;
+}
+
+.btn-save {
+    background-color: #2B78E4;
+    border: solid 1px;
+    border-color: black;
+    box-shadow: 3px 3px black;
+}
+
+.btn-cancel {
+    background-color: #CF2A27;
+    border: solid 1px;
+    border-color: black;
+    box-shadow: 3px 3px black;
+    margin-left: 30px;
+}
+
+#titleLeft {
+    color: white;
+    font-size: 25px;
+}
+
+#titleNote {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#btnClose {
+    text-align: right;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.wid-100{
+    width: 100%;
+}

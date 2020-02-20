@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ee0fedb69f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.jss"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.css"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="hanMuc.css">
+    <link rel="stylesheet" href="han-muc2.css">
+    <link rel="stylesheet" href="note.css">
+    <script src="han-muc2.js"></script>
+
+
+    <title>Hạn mức</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1 home">
+                    <a href="#" class="btn btn-primary btn-lg active btn-home" role="button" aria-pressed="true">
+                        <i class="fas fa-coins img-coins"></i>
+                    </a>
+                </div>
+                <div class="col-sm-3 finance-now ">
+                    <i class="fas fa-credit-card"></i> Tài chính hiện tại: 100000 VND
+                </div>
+                <div class="col-sm-6 add-note">
+                    <button type="button" class="btn btn-success btn-add-note">Thêm ghi chép</button>
+                </div>
+                <div class="col-sm-2 profile">
+                    <a href="#" class="btn btn-primary btn-lg active btn-profile" role="button" aria-pressed="true">
+                        <i class="fas fa-bell img-bell"></i>
+                    </a>
+                    <a href="#" class="btn btn-primary btn-lg active btn-profile" role="button" aria-pressed="true">
+                        <i class="fas fa-user-circle img-user"></i>
+                        <div class="user-name">Quang</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1 sidebarContainer">
+                    <ul>
+                        <li>
+                            <i class="fas fa-home"></i>
+                            <div>Tổng quan</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-book"></i>
+                            <div>Sổ ghi chép</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-list-alt"></i>
+                            <div>Tài khoản</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-building"></i>
+                            <div>Hạn mức chi</div>
+                        </li>
+                        <li>
+                            <i class="fab fa-wpforms"></i>
+                            <div>Báo cáo</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-bars"></i>
+                            <div>Khác</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-11 contentContainer gray-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <div class="white-background margin-top-60 padding-bot-10">
+                                    <div class="button1-container">
+                                        <a href="#" class="btn btn-primary btn-lg active add-han-muc" role="button" aria-pressed="true"><i class="fas fa-plus"></i>Thêm hạn mức</a>
+                                    </div>
+                                    <div class="border-nav right-nav position-rela han-muc-container">
+                                        <div class="title-header">
+                                            <div class="container margin-top-45">
+                                                <div class="row margin-bottom-20">
+                                                    <div class="col-sm-8">1/2-24/2</div>
+                                                    <div class="col-sm-4">Bội chi : <span>0Đ</span></div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="line line1">30%</div>
+                                                </div>
+                                                <div class="row top-bottom-40">
+                                                    <div class="col-sm-8 red-text">Đã chi : 15.000.000</div>
+                                                    <div class="col-sm-4 green-text">Còn 20 ngày: </br> <span> 24.000.000 VNĐ</span></div>
+                                                </div>
+                                                <div class="title-detail top-20 ">
+                                                    Hạn mức chi tháng 2
+                                                </div>
+
+                                                <span class=" status title-detail green2-background ">Đang diễn ra</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-nav right-nav position-rela han-muc-container margin-top-45">
+                                        <div class="title-header">
+                                            <div class="container margin-top-45">
+                                                <div class="row margin-bottom-20">
+                                                    <div class="col-sm-8">1/1-31/1</div>
+                                                    <div class="col-sm-4">Bội chi : <span>1.000.000Đ</span></div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="line line2">30%</div>
+                                                </div>
+                                                <div class="row top-bottom-40">
+                                                    <div class="col-sm-8 red-text">Đã chi : 20.000.000</div>
+                                                    <div class="col-sm-4 green-text">Còn 0 ngày: </br> <span> 0.000 VNĐ</span></div>
+                                                </div>
+                                                <div class="title-detail top-20">
+                                                    Hạn mức chi tháng 1
+                                                </div>
+
+                                                <span class=" status title-detail red-background ">Đã kết thúc</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="white-background margin-top-60 padding-bot-30">
+                                    <h3 class="padding-25">
+                                        Hạn mức tháng 2
+                                    </h3>
+                                    <button type="button" class="btn btn-edit edit-btn" data-toggle="modal" data-target="#editNote" onclick="">
+                                        <i class="fas fa-tools"></i> Sửa
+                                    </button>
+                                    <button type="button" class="btn btn-delete delete-btn">
+                                        <i class="far fa-trash-alt"></i> Xóa
+                                    </button>
+                                    <div class="wrapper margin-top-45">
+                                        <div class="line line1">30%</div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row font-size-15 ">
+                                            <div class="col-sm-8 red-text">Đã chi : 15.000.000</div>
+                                            <div class="col-sm-4 green-text">Còn 20 ngày: </br> <span> 24.000.000 VNĐ</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="container day font-size-20">
+                                        <div class="row row-1">
+                                            <div class="col-sm-1 icon">07</div>
+                                            <div class="col-sm-5 left month-year">
+                                                <div>Hôm nay</div>
+                                                <div>02/2020</div>
+                                            </div>
+                                            <div class="col-sm-6 right">
+                                                <div class="red">Chi: 100.000 VND</div>
+                                                <div class="green">Thu: 100.000 VND</div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-2">
+                                            <div class="col-sm-1 icon"><i class="fas fa-shopping-cart" style="color:#E06666"></i></div>
+                                            <div class="col-sm-5 left">
+                                                <div style="font-weight:bold">Đi chợ/ Siêu thị</div>
+                                                <div>Thức ăn trong ngày</div>
+                                            </div>
+                                            <div class="col-sm-5 right">
+                                                <div class="red">- 100.000 VND</div>
+                                                <div><i class="fas fa-money-bill-alt"></i> Ví tiền mặt</div>
+                                            </div>
+                                            <div class="col-sm-1" style="display:grid">
+                                                <button class="btn-info"><i class="fas fa-ellipsis-v"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="row row-2">
+                                            <div class="col-sm-1 icon"><i class="fas fa-money-check-alt" style="color:#6AA84F"></i></div>
+                                            <div class="col-sm-5 left">
+                                                <div style="font-weight:bold">Lương</div>
+                                                <div>Lương hàng tháng</div>
+                                            </div>
+                                            <div class="col-sm-5 right">
+                                                <div class="green">+ 100.000 VND</div>
+                                                <div><i class="fas fa-credit-card"></i> Thẻ tín dụng</div>
+                                            </div>
+                                            <div class="col-sm-1" style="display:grid">
+                                                <button class="btn-info"><i class="fas fa-ellipsis-v"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container day font-size-20">
+                                        <div class="row row-1">
+                                            <div class="col-sm-1 icon">06</div>
+                                            <div class="col-sm-5 left month-year">
+                                                <div>Thứ sáu</div>
+                                                <div>02/2020</div>
+                                            </div>
+                                            <div class="col-sm-6 right">
+                                                <div class="red">Chi: 100.000 VND</div>
+                                                <div class="green">Thu: 100.000 VND</div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-2">
+                                            <div class="col-sm-1 icon"><i class="fas fa-shopping-cart" style="color:#E06666"></i></div>
+                                            <div class="col-sm-5 left">
+                                                <div style="font-weight:bold">Đi chợ/ Siêu thị</div>
+                                                <div>Thức ăn trong ngày</div>
+                                            </div>
+                                            <div class="col-sm-5 right">
+                                                <div class="red">- 100.000 VND</div>
+                                                <div><i class="fas fa-money-bill-alt"></i> Ví tiền mặt</div>
+                                            </div>
+                                            <div class="col-sm-1" style="display:grid">
+                                                <button class="btn-info"><i class="fas fa-ellipsis-v"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="row row-2">
+                                            <div class="col-sm-1 icon"><i class="fas fa-money-check-alt" style="color:#6AA84F"></i></div>
+                                            <div class="col-sm-5 left">
+                                                <div style="font-weight:bold">Lương</div>
+                                                <div>Lương hàng tháng</div>
+                                            </div>
+                                            <div class="col-sm-5 right">
+                                                <div class="green">+ 100.000 VND</div>
+                                                <div><i class="fas fa-credit-card"></i> Thẻ tín dụng</div>
+                                            </div>
+                                            <div class="col-sm-1" style="display:grid">
+                                                <button class="btn-info"><i class="fas fa-ellipsis-v"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editNote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header container note-header">
+                    <div class="row row-header">
+                        <div class="col-sm-4" id="titleLeft">
+                            <i class="fas fa-circle-notch"></i> Sửa hạn mức
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="modal-title" id="titleNote">Thu chi tháng 2</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <button type="button" id="btnClose" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container maintain" ">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-10">
+                                <div class="white-background ">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-6 margin-top-30">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Số tiền</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 margin-top-30 ">
+                                                <input type="email" class="form-control input-form wid-100" id="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Tên hạn mức</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6"><input type="email" class="form-control input-form wid-100" id=""></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Hạng mục chi</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <select class="custom-select input-form wid-100">
+                                                    <option selected>Tất cả hạng mục</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Tài khoản</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <select class="custom-select input-form wid-100">
+                                                    <option selected>Tất cả hạng mục</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Lặp lại</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <select class="custom-select input-form wid-100">
+                                                    <option selected>Tất cả hạng mục</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Ngày bắt đầu</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input id="datepicker1" width="327" class="calendar-picker" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Ngày kết thúc</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input id="datepicker2" width="327" class="calendar-picker" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="container margin-top-bottom-30">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div>
+                                                    <div class=" margin-left-30 ">Dồn sang kì sau</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                                </div>
+                                                <div class="comment-text">Số tiền dư hoặc bội chi sẽ được dồn sang kì sau</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-save" data-dismiss="modal">
+                            <i class="far fa-save"></i> Lưu
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-cancel" data-dismiss="modal">
+                            <i class="far fa-trash-alt"></i> Hủy
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
