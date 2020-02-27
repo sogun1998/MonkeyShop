@@ -22,7 +22,7 @@
             border: 1px solid #000;
         }
 
-            .sidebarchild ul li :hover {
+            .sidebarchild ul li:hover {
                 background-color: #2B78E4;
                 color: #fff;
             }
