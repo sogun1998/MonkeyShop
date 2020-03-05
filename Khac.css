@@ -1,0 +1,72 @@
+
+#payMore option {
+    background-color: #379fed
+}
+.other-container {
+    padding-top:2em;
+}
+.other-header {
+    background-color: #073763;
+    padding: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.other-header-title {
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 5px;
+    border: 1px solid #326af1;
+    background-color: #379fed;
+    border-radius: 12px;
+    font-size: 1.1em;
+}
+.other-header-title select {
+        background-color: transparent !important;
+        border: none;
+        color: #fff !important;
+        font-weight:bold;
+}
+.other-content {
+    background-color: #DDD;
+    padding-top:2em;
+}
+
+.other-content-item {
+    font-size:1.1em;
+    font-weight:bold;
+}
+.other-content-item >div >b{
+    float:right;
+}
+.other-content-item > div > b >i {
+    font-size:2em;
+}
+.other-content-item div > input, .other-content-item div select {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: unset;
+}
+.viewhidden-add{
+
+}
+#viewhidden, #viewadd {
+    border: none;
+    background-color: unset;
+    color: #326af1;
+}
+@media (max-width: 575.98px) {
+    .other-content-item > div > b {
+        float: left;
+    }
+}
+/* add css cho modal other*/
+.modal-content.other-container{
+    background-color:transparent;
+    border:unset;
+    padding-top:0 !important;
+}
+    .modal-content.other-container other-header {
+        border: 1px;
+    }
