@@ -56,3 +56,65 @@
     margin-top: 5px;
     margin-bottom: 30px;
 }
+/* css color*/
+.cl-red {
+    color: red !important;
+}
+
+.cl-green {
+    color: green !important;
+}
+
+.cl-orange {
+    color: #ff6a00 !important;
+}
+/*css float*/
+pull-left{
+    float:left;
+}
+pull-right {
+    float: right;
+}
+pull-clear{
+    clear:both;
+}
+/*css padding*/
+.p-0{
+    padding:0!important;
+}
+p-l-0{
+    padding-left:0 !important;
+
+}
+p-r-0{
+    padding-right:0 !important;
+}
+p-t-0{
+    padding-top: 0 !important;
+}
+p-b-0{
+    padding-bottom:0 !important;
+}
+.m-0{
+    margin:0 !important;
+}
+/*css border*/
+.border-none {
+    border: none !important;
+}
+
+.border-left {
+    border-left: 1px solid #000;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-middel {
+    text-align: center !important;
+}

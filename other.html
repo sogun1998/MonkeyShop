@@ -4,7 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ee0fedb69f.js" crossorigin="anonymous"></script>
@@ -12,10 +11,11 @@
     <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="popup-note.css">
     <link rel="stylesheet" href="other.css">
-
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="khac.css">
+    <script src="Home.js"></script>
     <script src="popup-note.js"></script>
     <title>Other</title>
-    
 </head>
 
 <body>
@@ -356,114 +356,108 @@
     <!--add hang muc-->
     <div class="modal fade" id="addNote1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content" style="border-top-left-radius:5px;border-top-right-radius:5px;">
-                <div class="modal-header container note-header" style="background-color:#326af1">
+            <div class="modal-content other-container">
+
+                <div class="modal-header other-header" style="">
                     <div class="row row-header">
                         <div class="col-sm-12">
-                            <div style="width:100px;margin-left:auto;margin-right:auto;">
+                            <div class="other-header-title" style="">
+
                                 <select id="payMore" style="" class="custom-select">
-                                    <option value="">Chi tiền</option>
-                                    <option value="">Cho Vay</option>
-                                    <option value="">Thu Hồi</option>
+                                    <option style="" value="">Chi tiền</option>
+                                    <option style="" value="">Cho Vay</option>
+                                    <option style="" value="">Thu Hồi</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-body" style="background-color:#827474">
+
+
+                <div class="other-content modal-body" style="">
                     <div class="row" style="color:#000;">
-                        <div class="input-group mb-3">
+                        <div class="input-group mb-3 other-content-item">
                             <div class="col-sm-3">
-                                <b style="float:right;"> Số Tiền</b>
+                                <b> Số Tiền</b>
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" value="40$" style="border:none;border-radius:unset;border-bottom:1px solid #000;text-align:right" class="form-control" placeholder="40$">
+                                <input type="text" value="$40" style="" class="form-control" placeholder="40$">
                             </div>
                             <div class="col-sm-3">
-                                <select class="custom-select" style="border:none;border-radius:unset;border-bottom:1px solid #000;text-align:right">
+                                <select class="custom-select add-HangMuc" style="">
                                     <option style="text-align:right" value="">Ăn Uống</option>
                                     <option value="">Mua Sắm</option>
                                     <option value="">Đi Chơi</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="input-group mb-3">
+                        <div class="input-group mb-3 other-content-item">
                             <div class="col-sm-3">
-                                <b style="float:right;">Chọn Hạng Mục</b>
+                                <b style="">Chọn Hạng Mục</b>
                             </div>
                             <div class="col-sm-5">
-
-                                <input type="text" value="40$" style="border:none;border-radius:unset;border-bottom:1px solid #000;text-align:right" class="form-control" placeholder="40$">
+                                <input type="text" value="$Ăn Uống" class="form-control" placeholder="40$">
                             </div>
-                            <div class="col-sm-3" style="text-align:center">
+                            <div class="col-sm-3 text-middel">
                                 <i style="font-size:2em;" class="fas fa-plus-square"></i>
                                 <br />
                                 Thêm Hạng Mục
                             </div>
                         </div>
-                        <div class="input-group mb-3">
+                        <div class="input-group mb-3 other-content-item">
                             <div class="col-sm-3">
-                                <b style="float:right;">Diễn Giải</b>
+                                <b>Diễn Giải</b>
                             </div>
                             <div class="col-sm-8">
                                 <textarea type="text" class="form-control" style="border-color:#000;" placeholder=""></textarea>
                             </div>
-
                         </div>
-                        <div class="input-group mb-3">
+                        <div class="input-group mb-3 other-content-item">
                             <div class="col-sm-3">
-                                <b style="float:right;font-size:2em"><i class="fas fa-calendar-alt"></i></b>
+                                <b style=""><i class="fas fa-calendar-alt"></i></b>
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" value="Hôm Nay - 20/02/2020 " disabled style="border:none;border-radius:unset;border-bottom:1px solid #000;text-align:center" class="form-control">
+                                <input type="text" value="Hôm Nay - 20/02/2020 " disabled style="" class="form-control">
                             </div>
-
 
                         </div>
-                        <div class="input-group mb-3 hidden" id="viewhidden-content" >
-                            <div class="input-group mb-3">
+                        <div class="input-group mb-3 hidden " id="viewhidden-content">
+                            <div class="input-group mb-3 other-content-item">
                                 <div class="col-sm-3">
-                                    <b style="float:right;font-size:2em"><i class="fas fa-home"></i></b>
+                                    <b style=""><i class="fas fa-home"></i></b>
                                 </div>
                                 <div class="col-sm-8">
-                                    <input type="text" style="border:none;border-radius:unset;border-bottom:1px solid #000;text-align:left" class="form-control" placeholder="Chuyến Đi,Sự Kiện">
+                                    <input type="text" style="" class="form-control" placeholder="Chuyến Đi,Sự Kiện">
                                 </div>
-
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 other-content-item">
                                 <div class="col-sm-3">
-                                    <b style="float:right;font-size:2em"><i class="fas fa-users"></i></b>
+                                    <b style=""><i class="fas fa-users"></i></b>
                                 </div>
                                 <div class="col-sm-8">
-                                    <input type="text" style="border:none;border-radius:unset;border-bottom:1px solid #000;text-align:left" class="form-control" placeholder="Chi Cho ai">
+                                    <input type="text" style="" class="form-control" placeholder="Chi Cho ai">
                                 </div>
-
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 other-content-item">
                                 <div class="col-sm-3">
-                                    <b style="float:right;font-size:2em"><i class="fas fa-map-marker-alt"></i></b>
+                                    <b style=""><i class="fas fa-map-marker-alt"></i></b>
                                 </div>
                                 <div class="col-sm-8">
-                                    <input type="text" style="border:none;border-radius:unset;border-bottom:1px solid #000;text-align:left" class="form-control" placeholder="Địa Điểm">
+                                    <input type="text" style="" class="form-control" placeholder="Địa Điểm">
                                 </div>
-
                             </div>
-
 
                         </div>
-                        <div class="col-sm-12" style="text-align:center;">
-                            <button class="hidden" style="border:none;background-color:unset;color:#326af1" id="viewhidden"> Ẩn Chi Tiết <i class="fas fa-angle-up"></i> </button>
-                            <button class="" style="border:none;background-color:unset;color:#326af1;" id="viewadd"> Thêm Chi Tiết <i class="fas fa-angle-down"></i> </button>
+                        <div class="col-sm-12 viewhidden-add" style="text-align:center;">
+                            <button class="hidden" style="" id="viewhidden"> Ẩn Chi Tiết <i class="fas fa-angle-up"></i> </button>
+                            <button style="" id="viewadd"> Thêm Chi Tiết <i class="fas fa-angle-down"></i> </button>
                         </div>
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-info btn-save" data-dismiss="modal">
                             <i class="far fa-save"></i> Lưu
                         </button>
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -477,19 +471,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-
-            $("#viewadd").click(function () {
-                $("#viewhidden").removeClass("hidden");
-                $("#viewhidden-content").removeClass("hidden");
-                $("#viewadd").addClass("hidden");
-
-            })
-            $("#viewhidden").click(function () {
-                $("#viewhidden").addClass("hidden");
-                $("#viewhidden-content").addClass("hidden");
-                $("#viewadd").removeClass("hidden");
-
-            })
+            var home = new Home();
+            home.initHome();
         })
     </script>
 </body>

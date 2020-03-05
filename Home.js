@@ -124,6 +124,9 @@ var TheodoiThuChi = function () {
                 scales: {
                     yAxes: [{
                         display: false,
+                        drawborder: {
+                            display: false,
+                        }
                     }]
 
                 },
